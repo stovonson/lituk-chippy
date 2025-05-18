@@ -54,7 +54,9 @@ export default function Home() {
         </main>
 
         <div className="mt-8 bg-red-600 text-white p-4 border-2 border-yellow-300 text-center animate-pulse">
-          <p className="font-bold text-xl">This is an example of what you can host at lives-in-the.uk</p>
+          <p className="font-bold text-xl">This is an example of what you can host at <Link href="https://lives-in-the.uk" rel="noopener noreferrer" className="underline">
+            lives-in-the.uk
+          </Link></p>
         </div>
 
         <footer className="text-center bg-gray-800 p-4 border-t-2 border-yellow-400">
