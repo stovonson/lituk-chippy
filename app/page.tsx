@@ -13,37 +13,12 @@ export default function Home() {
             <h1 className="text-4xl md:text-6xl font-bold animate-pulse">Stovonson&apos;s Happy Place</h1>
             <Marquee text="Welcome to my awesome website! No CSS frameworks were harmed in the making of this site!" />
           </div>
-
-          <div className="flex justify-center my-4">
-            <Image
-              src="/placeholder.svg?height=60&width=400"
-              alt="Under Construction"
-              width={400}
-              height={60}
-              className="animate-bounce"
-            />
-          </div>
         </header>
-
-        <nav className="mb-8">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-center">
-            {["Home", "About Me", "My Cool Links"].map((item) => (
-              <Link
-                key={item}
-                href="#"
-                className="bg-blue-700 text-white p-3 border-2 border-white hover:bg-blue-500 hover:text-yellow-200 transition-colors font-bold"
-              >
-                {item}
-              </Link>
-            ))}
-          </div>
-        </nav>
 
         <main className="mb-8">
           <div className="bg-black text-green-400 p-4 border-2 border-green-500 font-mono mb-6">
             <p className="typing-effect">
-              Hello and welcome to my personal webpage! This site is best viewed with Netscape Navigator 4.0 at 800x600
-              resolution.
+              Hello and welcome to my personal webpage!
             </p>
           </div>
 
@@ -52,13 +27,7 @@ export default function Home() {
               <h2 className="text-xl font-bold mb-2 text-yellow-300">About Me</h2>
               <p>Hi! I'm Stovonson and this is my happy place on the information superhighway!</p>
               <div className="mt-4 text-center">
-                <Image
-                  src="/placeholder.svg?height=100&width=100"
-                  alt="My Avatar"
-                  width={100}
-                  height={100}
-                  className="mx-auto border-2 border-white"
-                />
+                <Image src="/stovonson.png" alt="Stovonson" width={100} height={100} className="mx-auto border-2 border-white"/>
               </div>
             </div>
 
@@ -84,8 +53,7 @@ export default function Home() {
           </div>
 
           <div className="mt-8 bg-yellow-200 text-black p-4 border-2 border-red-500">
-            <h2 className="text-xl font-bold mb-4 text-center text-red-600">Sign My Guestbook!</h2>
-            <GuestBook />
+            <h2 className="text-xl font-bold mb-4 text-center text-red-600">Reviews!</h2>
           </div>
         </main>
 
@@ -94,18 +62,9 @@ export default function Home() {
         </div>
 
         <footer className="text-center bg-gray-800 p-4 border-t-2 border-yellow-400">
-          <Visitor count={1337} />
           <p className="mt-4 text-xs">
             © 2025 Stovonson's Happy Place. Best viewed with Netscape Navigator. This page is 100% Y2K compliant!
           </p>
-          <div className="flex justify-center space-x-4 mt-4">
-            <div className="animate-pulse">
-              <Image src="/placeholder.svg?height=31&width=88" alt="Valid HTML 3.2" width={88} height={31} />
-            </div>
-            <div className="animate-pulse">
-              <Image src="/placeholder.svg?height=31&width=88" alt="Made with Notepad" width={88} height={31} />
-            </div>
-          </div>
         </footer>
       </div>
     </div>
