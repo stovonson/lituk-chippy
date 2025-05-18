@@ -51,10 +51,6 @@ export default function Home() {
               </div>
             </div>
           </div>
-
-          <div className="mt-8 bg-yellow-200 text-black p-4 border-2 border-red-500">
-            <h2 className="text-xl font-bold mb-4 text-center text-red-600">Reviews!</h2>
-          </div>
         </main>
 
         <div className="mt-8 bg-red-600 text-white p-4 border-2 border-yellow-300 text-center animate-pulse">
